@@ -1,7 +1,17 @@
 fun main(args: Array<String>) {
     println("Hello World")
+    var bubbles = 9
+    while (bubbles > 5) {
+        bubbles--
+    }
+    println("$bubbles bubbles in the water\n")
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+    do {
+        bubbles--
+    } while (bubbles > 50)
+    println("$bubbles bubbles in the water\n")
+
+    repeat(2) {
+        println("A fish is swimming")
+    }
 }
